@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
   async redirects() {
     return [{ source: "/explore-goa", destination: "/goa", permanent: true }];
   },

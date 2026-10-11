@@ -6,7 +6,7 @@ import { getMainPage, mainPageNeighbors } from "@/lib/main-pages";
 import { pageMeta } from "@/lib/seo";
 
 const page = getMainPage("/faq");
-const { prev, next } = mainPageNeighbors("/faq");
+const { prev } = mainPageNeighbors("/faq");
 
 export const metadata = pageMeta(page.href, page.metaTitle, page.metaDescription);
 
