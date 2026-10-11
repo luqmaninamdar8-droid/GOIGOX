@@ -39,6 +39,13 @@ body {
   color-scheme: dark;
 }
 
+/* A custom background on <select> makes Chrome paint the popup list white, so the
+   inherited white option text becomes unreadable. */
+select option {
+  background-color: #0d303c;
+  color: #ffffff;
+}
+
 ::selection {
   background: #f3c14a;
   color: #071b24;
