@@ -103,7 +103,7 @@ export const goaGuide = {
 } as const;
 
 export const bookingSteps = [
-  "Message us on WhatsApp or call +91 80889 43818.",
+  "Message us on WhatsApp or call +91 98221 64507.",
   "Share pickup, drop, date, time, and number of passengers.",
   "We confirm vehicle type, estimated fare, and driver details.",
   "Pay after the trip — cash, Google Pay, PhonePe, or Paytm.",

@@ -485,7 +485,7 @@ export const testimonials = [
 export const faqs = [
   {
     q: "How do I book a taxi with GOIGOX Cabs?",
-    a: "Fill out the form on this website, call +91 80889 43818, or WhatsApp us. We confirm bookings right away.",
+    a: "Fill out the form on this website, call +91 98221 64507, or WhatsApp us. We confirm bookings right away.",
   },
   {
     q: "Are your drivers licensed and verified?",
