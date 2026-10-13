@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import type { Metadata } from "next";
 import { Fraunces, Outfit } from "next/font/google";
+import Script from "next/script";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -79,6 +80,16 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppFloat />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${site.googleAdsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${site.googleAdsId}');`}
+        </Script>
       </body>
     </html>
   );

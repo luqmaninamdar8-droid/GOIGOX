@@ -11,6 +11,7 @@ export const site = {
   address: "Panaji, Goa, India",
   url: "https://irfantaxi.in",
   hours: "Open 24 hours",
+  googleAdsId: "AW-18508883145",
 } as const;
 
 export const nav = [
