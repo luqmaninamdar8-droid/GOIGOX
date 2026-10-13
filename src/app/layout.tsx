@@ -1,4 +1,5 @@
 import { Footer } from "@/components/Footer";
+import { GoogleAdsTracking } from "@/components/GoogleAdsTracking";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -80,6 +81,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppFloat />
+        <GoogleAdsTracking />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${site.googleAdsId}`}
           strategy="afterInteractive"

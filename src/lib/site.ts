@@ -12,6 +12,7 @@ export const site = {
   url: "https://irfantaxi.in",
   hours: "Open 24 hours",
   googleAdsId: "AW-18508883145",
+  googleAdsConversionLabel: "0YHyCPiUv5sdEMnJ3PlE",
 } as const;
 
 export const nav = [

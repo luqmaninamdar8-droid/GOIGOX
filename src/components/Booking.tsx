@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Clock, Mail, Phone, Shield } from "lucide-react";
 import { Container, WhatsAppIcon } from "@/components/ui";
+import { trackWhatsAppConversion } from "@/lib/gtag";
 import { site } from "@/lib/site";
 import { waBookPrefix, waUrl } from "@/lib/whatsapp";
 
@@ -36,6 +37,7 @@ Drop-off: ${form.drop}
 Date: ${form.date}
 Time: ${form.time}
 Passengers: ${form.passengers}`;
+    trackWhatsAppConversion();
     window.open(waUrl(message), "_blank", "noopener,noreferrer");
   }
 
